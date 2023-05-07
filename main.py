@@ -1,5 +1,5 @@
 # """Python file to serve as the frontend"""
-from dotenv import load_dotenv
+
 import streamlit as st
 # from streamlit_chat import message
 
@@ -9,13 +9,13 @@ import streamlit as st
 
 
 def main():
-    load_dotenv()
+   
     st.set_page_config(page_title="Ask your PDF")
     st.header("Ask Your PDF")
     
     pdf = st.file_uploader("Upload you PDF", type="pdf")
 
-if __name__ == "__main__":\
+if __name__ == "__main__":
     main()
 
 
